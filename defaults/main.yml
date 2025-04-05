@@ -207,6 +207,7 @@ consul_tls_verify_incoming: "{{ lookup('env', 'CONSUL_TLS_VERIFY_INCOMING') | de
 consul_tls_verify_outgoing: "{{ lookup('env', 'CONSUL_TLS_VERIFY_OUTGOING') | default(true, true) }}"
 consul_tls_verify_incoming_rpc: "{{ lookup('env', 'CONSUL_TLS_VERIFY_INCOMING_RPC') | default(false, true) }}"
 consul_tls_verify_incoming_https: "{{ lookup('env', 'CONSUL_TLS_VERIFY_INCOMING_HTTPS') | default(false, true) }}"
+consul_tls_verify_incoming_grpc: "{{ lookup('env', 'CONSUL_TLS_VERIFY_INCOMING_GRPC') | default(false, true) }}"
 consul_tls_verify_server_hostname: "{{ lookup('env', 'CONSUL_TLS_VERIFY_SERVER_HOSTNAME') | default(false, true) }}"
 consul_tls_files_remote_src: false
 consul_tls_min_version: "{{ lookup('env', 'CONSUL_TLS_MIN_VERSION') | default('TLSv1_2', true) }}"

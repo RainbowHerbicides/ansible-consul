@@ -125,6 +125,11 @@
             "verify_incoming": {{consul_tls_verify_incoming_https | bool| to_json }},
         },
         {% endif %}
+        {% if consul_tls_verify_incoming_grpc is defined %}
+        "grpc": {
+            "verify_incoming": {{ consul_tls_verify_incoming_grpc | bool| to_json }},
+        },
+        {% endif %}
     },
     {% else %}
     "ca_file": "{{ consul_tls_dir }}/{{ consul_tls_ca_crt | basename }}",

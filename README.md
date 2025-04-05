@@ -637,6 +637,11 @@ Notice that the dict object has to use precisely the names stated in the documen
   - Override with `CONSUL_TLS_VERIFY_INCOMING_HTTPS` environment variable
 - Default value: false
 
+### `consul_tls_verify_incoming_grpc`
+- Verify incoming connections on gRPC endpoints (client certificates)
+  - Override with `CONSUL_TLS_VERIFY_INCOMING_GRPC` environment variable
+- Default value: false
+
 ### `consul_tls_verify_server_hostname`
 
 - Verify server hostname
